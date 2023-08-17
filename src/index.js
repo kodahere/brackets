@@ -1,5 +1,4 @@
 module.exports = function check(str, bracketsConfig) {
-  function check(str, bracketsConfig) {
     const stack = [];
     for (const char of str) {
       if (bracketsConfig[0].includes(char)) {
@@ -12,4 +11,4 @@ module.exports = function check(str, bracketsConfig) {
     }
     return stack.length === 0;
   }
-}
+
